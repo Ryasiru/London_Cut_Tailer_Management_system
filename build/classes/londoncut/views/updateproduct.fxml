@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.UpdateproductController">
+   <children>
+      <Label layoutX="172.0" layoutY="14.0" text="Update Product" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="207.0" layoutX="569.0" layoutY="40.0" startX="-100.0" />
+      <Line endX="13.0" layoutX="131.0" layoutY="40.0" startX="-108.0" />
+      <AnchorPane fx:id="root" layoutX="20.0" layoutY="90.0" prefHeight="537.0" prefWidth="766.0">
+         <children>
+            <JFXTextField fx:id="txtsearch" layoutX="174.0" layoutY="54.0" onKeyReleased="#autoSearch" prefHeight="31.0" prefWidth="418.0" promptText="Search" />
+            <TableView fx:id="tblupdateproduct" layoutX="23.0" layoutY="121.0" onMouseClicked="#loadaddproduct" prefHeight="382.0" prefWidth="720.0">
+               <columns>
+                  <TableColumn fx:id="colID" prefWidth="129.0" text="Product ID" />
+                  <TableColumn fx:id="colName" prefWidth="157.0" text="Product Name" />
+                  <TableColumn fx:id="colPrice" prefWidth="140.0" text="Unit Price" />
+                  <TableColumn fx:id="colQty" prefWidth="123.0" text="Qunatity" />
+                  <TableColumn fx:id="colDate" prefWidth="149.0" text="Purchased Date" />
+               </columns>
+            </TableView>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

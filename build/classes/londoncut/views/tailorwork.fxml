@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="tailorworkPane" prefHeight="955.0" prefWidth="1201.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.TailorworkController">
+   <children>
+      <Label layoutX="208.0" layoutY="14.0" text="Tailor Work Progress" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="47.0" />
+         </font>
+      </Label>
+      <Line endX="263.0" layoutX="833.0" layoutY="48.0" startX="-142.0" />
+      <Line endX="-42.0" layoutX="212.0" layoutY="48.0" startX="-187.0" />
+      <JFXTextField fx:id="txtsearch" layoutX="60.0" layoutY="358.0" onKeyReleased="#autoSearch" prefHeight="31.0" prefWidth="291.0" promptText="Search" />
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="866.0" layoutY="826.0" onAction="#loadhome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <TableView fx:id="tbltailor" layoutX="26.0" layoutY="411.0" onMouseClicked="#setSelectedID" prefHeight="256.0" prefWidth="418.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="149.0" text="Tailor ID" />
+            <TableColumn fx:id="colName" prefWidth="247.0" text="Tailor Name" />
+        </columns>
+      </TableView>
+      <Line endX="-100.0" endY="801.0" layoutX="734.0" layoutY="124.0" startX="-100.0" startY="-44.0" />
+      <Label layoutX="655.0" layoutY="144.0" text="Shirts">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="937.0" layoutY="143.0" text="Trousers">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="655.0" layoutY="238.0" text="Shorts">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="937.0" layoutY="237.0" text="Coats">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="655.0" layoutY="334.0" text="Waist Coats">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="937.0" layoutY="333.0" text="Skirts">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="655.0" layoutY="434.0" text="Blouse">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="937.0" layoutY="433.0" text="Shirvani">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="655.0" layoutY="539.0" text="Nationals">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="937.0" layoutY="538.0" text="Sarong">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="655.0" layoutY="642.0" text="Doctor Coats">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="937.0" layoutY="641.0" text="Band Costume">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="655.0" layoutY="738.0" text="Others">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtshirt" editable="false" focusTraversable="false" layoutX="803.0" layoutY="143.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField fx:id="txtshort" editable="false" focusTraversable="false" layoutX="803.0" layoutY="238.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="803.0" layoutY="333.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="803.0" layoutY="434.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="803.0" layoutY="538.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="803.0" layoutY="641.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="803.0" layoutY="738.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="1094.0" layoutY="144.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="1094.0" layoutY="239.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="1094.0" layoutY="334.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="1094.0" layoutY="435.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="1094.0" layoutY="539.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <TextField editable="false" focusTraversable="false" layoutX="1094.0" layoutY="642.0" prefHeight="31.0" prefWidth="63.0" text="0" />
+      <JFXButton fx:id="btnsearch" buttonType="RAISED" focusTraversable="false" layoutX="205.0" layoutY="826.0" onAction="#loadFields" prefHeight="100.0" prefWidth="100.0" styleClass="btn_done" stylesheets="@btnstyle.css" />
+      <Label layoutX="26.0" layoutY="683.0" text="Tailor ID :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtID" editable="false" layoutX="129.0" layoutY="681.0" prefHeight="31.0" prefWidth="207.0" />
+      <Label layoutX="14.0" layoutY="778.0" text="From :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="305.0" layoutY="778.0" text="To :">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <JFXDatePicker fx:id="fromDate" layoutX="92.0" layoutY="776.0" onAction="#setFromDate" prefHeight="31.0" prefWidth="194.0" />
+      <JFXDatePicker fx:id="toDate" layoutX="361.0" layoutY="776.0" onAction="#setToDate" prefHeight="31.0" prefWidth="224.0" />
+      <Line endX="499.0" layoutX="115.0" layoutY="319.0" startX="-100.0" />
+      <TableView fx:id="tbltailorsuit" layoutX="334.0" layoutY="99.0" prefHeight="208.0" prefWidth="291.0">
+        <columns>
+          <TableColumn fx:id="colFname" prefWidth="133.0" text="Fname" />
+            <TableColumn fx:id="colLname" prefWidth="150.0" text="Lname" />
+        </columns>
+      </TableView>
+      <TextField fx:id="txtsuitid" layoutX="129.0" layoutY="143.0" />
+      <Label layoutX="39.0" layoutY="142.0" text="Suit ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnsearchtailor" buttonType="RAISED" focusTraversable="false" layoutX="129.0" layoutY="202.0" onAction="#getTailor" prefHeight="100.0" prefWidth="100.0" styleClass="btn_search" stylesheets="@btnstyle.css" />
+   </children>
+</AnchorPane>

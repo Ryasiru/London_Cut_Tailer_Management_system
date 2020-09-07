@@ -1,0 +1,209 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Apr 20, 2020, 1:39:13 AM
+    Author     : Yasiru
+*/
+
+.btn_measurement{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/measurement.jpg");
+    -fx-background-color:#ffffff;
+
+}
+
+.btn_update2{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/update2.jpg");
+    -fx-background-color:#ffffff;
+
+}
+.btn_delete2{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/delete2.png");
+    -fx-background-color:#ffffff;
+
+}
+
+.btn_notify{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/notify.jpg");
+    -fx-background-color:#ffffff;
+
+}
+
+.btn_customer{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/customer.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_workorder{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/order.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_product{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/product.png");
+    -fx-background-color:#ffffff;
+}
+
+.btn_coat{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/coat.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_material{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/mat.png");
+    -fx-background-color:#ffffff;
+}
+
+.btn_tailor{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/tailor.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_payment{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/money.png");
+    -fx-background-color:#ffffff;
+}
+
+.btn_newCustomer{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/NewCustomer.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_custmanage{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/customermanage.jpg");
+    -fx-background-color:#ffffff;
+}
+
+
+.btn_home{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/homeFinal.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_print{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/print.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_clear{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/clear.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_next{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/next.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_back{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/back.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_plus{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/plus.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_done{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/done.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_sewmachine{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/sewmachine.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_buy{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/buy.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_coatmanage{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/coatmanage.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_productmanage{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/productmanage.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_delete{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/delete.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_update{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/update.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_add{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/add.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_expence{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/expence.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_tailorpayment{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/tailorpayment.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_report{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/report.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_search{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-image: url("/londoncut/images/search.jpg");
+    -fx-background-color:#ffffff;
+}
+
+.btn_min{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-color:#00ff3a;
+}
+
+.btn_close{
+    -fx-shape:"                 M 100, 100                 m -75, 0                 a 75,75 0 1,0 150,0                 a 75,75 0 1,0 -150,0                 ";
+    -fx-background-color:#ff0000;
+}

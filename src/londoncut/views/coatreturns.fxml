@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="coatreturnPane" prefHeight="840.0" prefWidth="1056.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.CoatreturnsController">
+   <children>
+      <Label layoutX="227.0" layoutY="14.0" text="Coat Returns" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="270.0" endY="-1.52587890625E-5" layoutX="566.0" layoutY="40.0" startX="-100.0" />
+      <Line endX="-9.0" layoutX="209.0" layoutY="40.0" startX="-186.0" startY="-1.52587890625E-5" />
+      <JFXTextField fx:id="txtsearch" layoutX="227.0" layoutY="129.0" onKeyReleased="#autoSearch" prefHeight="31.0" prefWidth="437.0" promptText="Search" />
+      <TableView fx:id="tblreturncoat" layoutX="75.0" layoutY="181.0" onMouseClicked="#getDataToFields" prefHeight="292.0" prefWidth="948.0">
+        <columns>
+          <TableColumn fx:id="colNIC" prefWidth="174.0" text="NIC" />
+            <TableColumn fx:id="colCustomerName" prefWidth="245.0" text="Customer Name" />
+            <TableColumn fx:id="colNumber" prefWidth="170.0" text="Coat Number" />
+            <TableColumn fx:id="colRentDate" prefWidth="172.0" text="Rent Date" />
+            <TableColumn fx:id="colReturnDate" prefWidth="161.0" text="Return Date" />
+        </columns>
+      </TableView>
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="252.0" layoutY="627.0" onAction="#loadhome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btndone" buttonType="RAISED" focusTraversable="false" layoutX="732.0" layoutY="627.0" onAction="#updateCoatStatus" prefHeight="100.0" prefWidth="100.0" styleClass="btn_done" stylesheets="@btnstyle.css" />
+      <Label layoutX="29.0" layoutY="523.0" text="Today Date">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="380.0" layoutY="526.0" text="Return Date">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="740.0" layoutY="526.0" text="Fine">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttodaydate" editable="false" layoutX="157.0" layoutY="524.0" />
+      <TextField fx:id="txtreturndate" editable="false" layoutX="513.0" layoutY="526.0" />
+      <TextField fx:id="txtfine" editable="false" layoutX="799.0" layoutY="524.0" />
+   </children>
+</AnchorPane>

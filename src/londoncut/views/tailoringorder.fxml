@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="tailoringorderPane" prefHeight="936.0" prefWidth="1307.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.TailoringorderController">
+   <children>
+      <Label layoutX="237.0" layoutY="14.0" text="Tailor Work Order" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="47.0" />
+         </font>
+      </Label>
+      <Line endX="482.0" endY="7.62939453125E-6" layoutX="804.0" layoutY="49.0" startX="-159.0" />
+      <Line endX="19.0" layoutX="190.0" layoutY="48.0" startX="-161.0" />
+      <TableView fx:id="tblOrder" focusTraversable="false" layoutX="14.0" layoutY="130.0" onMouseClicked="#getSuitData" prefHeight="437.0" prefWidth="756.0">
+        <columns>
+            <TableColumn fx:id="colOrdernumber" editable="false" prefWidth="83.0" sortable="false" text="OrderNo." />
+          <TableColumn fx:id="colSuitid" editable="false" prefWidth="99.0" text="Suit ID" />
+            <TableColumn fx:id="colType" editable="false" prefWidth="105.0" text="Suit Type" />
+            <TableColumn fx:id="colMeasurement" editable="false" prefWidth="252.0" text="Measurement" />
+            <TableColumn fx:id="colDeliverydate" editable="false" prefWidth="129.0" text="Delivery Date" />
+            <TableColumn fx:id="colQty" prefWidth="87.0" text="Qty" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tbltailor" focusTraversable="false" layoutX="800.0" layoutY="129.0" onMouseClicked="#getTailorData" prefHeight="426.0" prefWidth="493.0">
+        <columns>
+          <TableColumn fx:id="colTailorID" editable="false" prefWidth="180.0" text="Tailor ID" />
+            <TableColumn fx:id="colTailorname" editable="false" prefWidth="312.0" text="Tailor Name" />
+        </columns>
+      </TableView>
+      <Label layoutX="29.0" layoutY="94.0" text="Select Order ">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="94.0" text="Select Tailor">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="299.0" layoutY="790.0" onAction="#loadhome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnprint" buttonType="RAISED" focusTraversable="false" layoutX="987.0" layoutY="790.0" onAction="#addTailorWork" prefHeight="100.0" prefWidth="100.0" styleClass="btn_print" stylesheets="@btnstyle.css" />
+      <Line endX="-100.0" endY="735.0" layoutX="875.0" layoutY="117.0" startX="-100.0" startY="-33.0" />
+      <Label layoutX="531.0" layoutY="588.0" text="Suit Type">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="26.0" layoutY="644.0" text="Measurement">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="315.0" layoutY="697.0" text="Delivery Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsuittype" editable="false" focusTraversable="false" layoutX="620.0" layoutY="588.0" prefHeight="31.0" prefWidth="138.0" />
+      <TextField fx:id="txtdeliverydate" editable="false" focusTraversable="false" layoutX="456.0" layoutY="697.0" prefHeight="31.0" prefWidth="205.0" />
+      <TextField fx:id="txtmeasurement" editable="false" focusTraversable="false" layoutX="164.0" layoutY="644.0" prefHeight="31.0" prefWidth="593.0" />
+      <Label layoutX="809.0" layoutY="728.0" prefHeight="30.0" prefWidth="100.0" text="Tailor Price">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttailorprice" focusTraversable="false" layoutX="927.0" layoutY="727.0" onKeyTyped="#numbersOnly" />
+      <Label layoutX="832.0" layoutY="603.0" text="Tailor ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="798.0" layoutY="667.0" text="Tailor Name">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txttailorid" editable="false" focusTraversable="false" layoutX="927.0" layoutY="603.0" />
+      <TextField fx:id="txttailorname" editable="false" focusTraversable="false" layoutX="927.0" layoutY="666.0" prefHeight="31.0" prefWidth="345.0" />
+      <Label layoutX="299.0" layoutY="588.0" text="Suit ID">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtsuitnumber" editable="false" focusTraversable="false" layoutX="373.0" layoutY="588.0" prefHeight="31.0" prefWidth="138.0" />
+      <Label layoutX="26.0" layoutY="698.0" text="Qty">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtqty" focusTraversable="false" layoutX="74.0" layoutY="697.0" onKeyTyped="#numbersOnly" prefHeight="31.0" prefWidth="122.0" />
+      <Label layoutX="29.0" layoutY="588.0" prefHeight="30.0" prefWidth="108.0" text="OrderNo">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtordernumber" editable="false" focusTraversable="false" layoutX="117.0" layoutY="588.0" prefHeight="31.0" prefWidth="159.0" />
+   </children>
+</AnchorPane>

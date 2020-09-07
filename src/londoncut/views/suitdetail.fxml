@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="suitdetail" prefHeight="455.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.SuitdetailController">
+   <children>
+      <TableView fx:id="tblsuitdetail" layoutX="14.0" layoutY="14.0" onMouseClicked="#setDataToFields" prefHeight="241.0" prefWidth="704.0">
+        <columns>
+          <TableColumn fx:id="colID" prefWidth="141.0" text="Suit ID" />
+            <TableColumn fx:id="colType" prefWidth="107.0" text="Type" />
+            <TableColumn fx:id="colDate" prefWidth="176.0" text="Delivery Date" />
+            <TableColumn fx:id="colQty" prefWidth="116.0" text="Qty" />
+            <TableColumn fx:id="colPrice" prefWidth="163.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="288.0" text="Suit ID">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="32.0" layoutY="386.0" text="Price">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtid" editable="false" layoutX="94.0" layoutY="289.0" />
+      <TextField fx:id="txtprice" layoutX="94.0" layoutY="387.0" />
+      <JFXButton fx:id="btnadd" buttonType="RAISED" focusTraversable="false" layoutX="382.0" layoutY="286.0" onAction="#updateSuitPrice" prefHeight="100.0" prefWidth="100.0" styleClass="btn_add" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btndelete" buttonType="RAISED" focusTraversable="false" layoutX="570.0" layoutY="286.0" onAction="#deleteSuit" prefHeight="100.0" prefWidth="100.0" styleClass="btn_delete" stylesheets="@btnstyle.css" />
+      <Label layoutX="32.0" layoutY="336.0" text="Qty">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtqty" editable="false" layoutX="94.0" layoutY="337.0" prefHeight="31.0" prefWidth="109.0" />
+   </children>
+</AnchorPane>

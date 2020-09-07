@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="661.0" prefWidth="801.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.AddmaterialController">
+   <children>
+      <Label layoutX="178.0" layoutY="14.0" text="Add Material" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="224.0" layoutX="551.0" layoutY="40.0" startX="-115.0" />
+      <Line endX="-3.0" layoutX="154.0" layoutY="40.0" startX="-139.0" />
+      <Label layoutX="59.0" layoutY="98.0" text="Material Number">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="207.0" text="Material Name">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="59.0" layoutY="324.0" text="Quality">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtmaterial" layoutX="152.0" layoutY="239.0" onKeyTyped="#characterOnly" prefHeight="31.0" prefWidth="268.0" />
+      <JFXTextField fx:id="txtquality" layoutX="152.0" layoutY="356.0" onKeyTyped="#characterOnly" />
+      <JFXButton fx:id="btnadd" buttonType="RAISED" focusTraversable="false" layoutX="501.0" layoutY="463.0" onAction="#addNewMaterial" prefHeight="100.0" prefWidth="100.0" styleClass="btn_done" stylesheets="@btnstyle.css" />
+      <TextField fx:id="txtmaterialnumber" editable="false" layoutX="152.0" layoutY="138.0" />
+      <Label layoutX="59.0" layoutY="431.0" text="Quantity">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtqty" layoutX="152.0" layoutY="457.0" />
+   </children>
+</AnchorPane>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane id="AnchorPane" fx:id="managematerialPane" prefHeight="820.0" prefWidth="1248.0" style="-fx-background-color: white;" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.171" fx:controller="londoncut.controller.ManagematerialController">
+   <children>
+      <Label layoutX="260.0" layoutY="14.0" text="Manage Material" textFill="#4400ff">
+         <font>
+            <Font size="47.0" />
+         </font>
+      </Label>
+      <Line endX="466.0" layoutX="760.0" layoutY="48.0" startX="-110.0" />
+      <Line endX="47.0" layoutX="185.0" layoutY="47.0" startX="-162.0" />
+      <AnchorPane fx:id="root" layoutX="426.0" layoutY="122.0" prefHeight="661.0" prefWidth="801.0" />
+      <JFXButton fx:id="btnaddmaterial" buttonType="RAISED" focusTraversable="false" layoutX="160.0" layoutY="113.0" onAction="#loadaddmaterial" prefHeight="100.0" prefWidth="100.0" styleClass="btn_add" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btndeletematerial" buttonType="RAISED" focusTraversable="false" layoutX="160.0" layoutY="292.0" onAction="#loaddeletematerial" prefHeight="100.0" prefWidth="100.0" styleClass="btn_delete" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnupdatematerial" buttonType="RAISED" focusTraversable="false" layoutX="160.0" layoutY="471.0" onAction="#loadupdatematerial" prefHeight="100.0" prefWidth="100.0" styleClass="btn_update" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="160.0" layoutY="638.0" onAction="#loadhome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <Label layoutX="148.0" layoutY="232.0" text="Add Material">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="128.0" layoutY="410.0" text="Remove Material">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="132.0" layoutY="588.0" text="Update Material">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="181.0" layoutY="751.0" text="Home">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

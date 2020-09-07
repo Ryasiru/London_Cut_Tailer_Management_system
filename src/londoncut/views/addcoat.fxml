@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="addcoatPane" prefHeight="661.0" prefWidth="801.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.AddcoatController">
+   <children>
+      <Label layoutX="181.0" layoutY="14.0" text="Add Coat" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="36.0" />
+         </font>
+      </Label>
+      <Line endX="293.0" layoutX="482.0" layoutY="40.0" startX="-107.0" />
+      <Line endX="-6.0" layoutX="157.0" layoutY="40.0" startX="-132.0" />
+      <Label layoutX="53.0" layoutY="125.0" text="Coat Number">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="247.0" text="Coat Colour">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtcoatcolour" layoutX="152.0" layoutY="287.0" />
+      <Label layoutX="61.0" layoutY="378.0" text="Coat Price">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXTextField fx:id="txtprice" layoutX="152.0" layoutY="417.0" />
+      <JFXButton fx:id="btnaddcoat" buttonType="RAISED" focusTraversable="false" layoutX="575.0" layoutY="473.0" onAction="#addCoat" prefHeight="100.0" prefWidth="100.0" styleClass="btn_done" stylesheets="@btnstyle.css" />
+      <TextField fx:id="txtcoatnumber" editable="false" layoutX="152.0" layoutY="167.0" />
+   </children>
+</AnchorPane>

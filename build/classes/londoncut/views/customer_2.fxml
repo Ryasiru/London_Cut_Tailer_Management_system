@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="customermanagementPane" prefHeight="382.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.Customer_2Controller">
+   <children>
+      <GridPane layoutX="437.0" layoutY="73.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="18.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="CENTER" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnback" buttonType="RAISED" focusTraversable="false" onAction="#backHome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_back" stylesheets="@btnstyle.css" />
+            <JFXButton fx:id="btncustomermanage" buttonType="RAISED" onAction="#loadmanagecustomerWindow" prefHeight="100.0" prefWidth="100.0" styleClass="btn_custmanage" stylesheets="@btnstyle.css" GridPane.columnIndex="1" />
+            <JFXButton fx:id="btncutomerpayment" buttonType="RAISED" focusTraversable="false" onAction="#loadcustomerpaymentWindow" prefHeight="100.0" prefWidth="100.0" stylesheets="@btnstyle.css" GridPane.columnIndex="2">
+               <styleClass>
+                  <String fx:value="btn_payment" />
+                  <String fx:value="btn_payment" />
+               </styleClass>
+            </JFXButton>
+            <Label focusTraversable="false" mouseTransparent="true" prefHeight="146.0" prefWidth="206.0" text="Manage Customer" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="146.0" prefWidth="238.0" text="Customer Payments" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

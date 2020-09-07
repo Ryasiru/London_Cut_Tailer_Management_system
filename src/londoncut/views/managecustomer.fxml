@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="managecustomerPane" prefHeight="820.0" prefWidth="1248.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.ManagecustomerController">
+   <children>
+      <Label layoutX="230.0" layoutY="22.0" text="Manage Customer" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="47.0" />
+         </font>
+      </Label>
+      <Line endX="69.0" layoutX="115.0" layoutY="56.0" startX="-100.0" />
+      <Line endX="431.0" layoutX="792.0" layoutY="58.0" startX="-108.0" />
+      <AnchorPane fx:id="root" layoutX="502.0" layoutY="98.0" prefHeight="661.0" prefWidth="801.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="419.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="115.0" />
+      <JFXButton fx:id="btnadd" buttonType="RAISED" focusTraversable="false" layoutX="100.0" layoutY="108.0" onAction="#loadaddcustomer" prefHeight="100.0" prefWidth="100.0" styleClass="btn_add" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btndelete" buttonType="RAISED" focusTraversable="false" layoutX="100.0" layoutY="281.0" onAction="#loaddeletecustomer" prefHeight="100.0" prefWidth="100.0" styleClass="btn_delete" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnupdate" buttonType="RAISED" focusTraversable="false" layoutX="101.0" layoutY="446.0" onAction="#loadupdatecustomer" prefHeight="100.0" prefWidth="100.0" styleClass="btn_update" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="101.0" layoutY="606.0" onAction="#backhome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <Label layoutX="87.0" layoutY="225.0" text="Add Customer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="70.0" layoutY="395.0" text="Remove Customer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="74.0" layoutY="558.0" text="Update Customer">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="125.0" layoutY="726.0" text="Home">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

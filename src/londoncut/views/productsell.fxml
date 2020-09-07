@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="731.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.ProductsellController">
+   <children>
+      <TableView fx:id="tblproduct" layoutX="412.0" layoutY="14.0" prefHeight="249.0" prefWidth="298.0">
+        <columns>
+          <TableColumn fx:id="colProduct" prefWidth="113.0" text="Product " />
+            <TableColumn fx:id="colQty" prefWidth="75.0" text="Qty" />
+            <TableColumn fx:id="colPrice" prefWidth="109.0" text="Price" />
+        </columns>
+      </TableView>
+      <Label layoutX="21.0" layoutY="27.0" text="Product">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="222.0" text="Quantity">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="21.0" layoutY="123.0" text="Unit Price">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnaddProduct" buttonType="RAISED" focusTraversable="false" layoutX="139.0" layoutY="300.0" onAction="#addProduct" prefHeight="80.0" prefWidth="80.0" styleClass="btn_plus" stylesheets="@btnstyle.css" />
+      <JFXComboBox fx:id="comboproduct" editable="true" layoutX="129.0" layoutY="28.0" onAction="#loadPrice" onKeyReleased="#autoLoad" prefHeight="31.0" prefWidth="180.0" />
+      <TextField fx:id="txtqty" layoutX="125.0" layoutY="223.0" />
+      <TextField fx:id="txtunitprice" layoutX="125.0" layoutY="124.0" />
+      <Line endX="24.0" endY="265.0" layoutX="332.0" layoutY="163.0" startX="24.0" startY="-148.0" />
+      <JFXButton fx:id="btndelete" buttonType="RAISED" focusTraversable="false" layoutX="521.0" layoutY="300.0" onAction="#deleteProduct" prefHeight="80.0" prefWidth="80.0" styleClass="btn_delete2" stylesheets="@btnstyle.css" />
+   </children>
+</AnchorPane>

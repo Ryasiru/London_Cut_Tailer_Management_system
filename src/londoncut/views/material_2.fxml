@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="selectmaterialPane" prefHeight="382.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.Material_2Controller">
+   <children>
+      <GridPane layoutX="168.0" layoutY="20.0" prefHeight="343.0" prefWidth="919.0" AnchorPane.bottomAnchor="19.0" AnchorPane.leftAnchor="168.0" AnchorPane.rightAnchor="168.0" AnchorPane.topAnchor="20.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="664.0" minWidth="10.0" prefWidth="618.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="664.0" minWidth="10.0" prefWidth="618.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="712.0" minWidth="10.0" prefWidth="592.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnback" buttonType="RAISED" focusTraversable="false" onAction="#backHome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_back" stylesheets="@btnstyle.css" />
+            <JFXButton fx:id="btnmanagematerial" buttonType="RAISED" focusTraversable="false" onAction="#loadmanagematerial" prefHeight="100.0" prefWidth="100.0" styleClass="btn_productmanage" stylesheets="@btnstyle.css" GridPane.columnIndex="1" />
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="146.0" prefWidth="225.0" text="Manage Material" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+            <JFXButton fx:id="btnnotifymateial" buttonType="RAISED" focusTraversable="false" onAction="#loadmaterialview" prefHeight="100.0" prefWidth="100.0" styleClass="btn_notify" stylesheets="@btnstyle.css" GridPane.columnIndex="2" />
+            <Label alignment="CENTER" focusTraversable="false" layoutX="370.0" layoutY="207.0" mouseTransparent="true" prefHeight="146.0" prefWidth="225.0" text="Material" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="25.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

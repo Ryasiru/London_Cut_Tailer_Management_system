@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="managetailorPane" prefHeight="820.0" prefWidth="1248.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.ManagetailorController">
+   <children>
+      <Label layoutX="294.0" layoutY="21.0" text="Manage Tailors" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="47.0" />
+         </font>
+      </Label>
+      <Line endX="455.0" layoutX="765.0" layoutY="55.0" startX="-100.0" />
+      <Line endX="57.0" layoutX="191.0" layoutY="55.0" startX="-162.0" />
+      <AnchorPane fx:id="root" layoutX="405.0" layoutY="115.0" prefHeight="661.0" prefWidth="801.0" />
+      <JFXButton fx:id="btnaddtailor" buttonType="RAISED" focusTraversable="false" layoutX="139.0" layoutY="115.0" onAction="#loadaddtailor" prefHeight="100.0" prefWidth="100.0" styleClass="btn_add" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btndeletetailor" buttonType="RAISED" focusTraversable="false" layoutX="139.0" layoutY="282.0" onAction="#loaddeletetailor" prefHeight="100.0" prefWidth="100.0" styleClass="btn_delete" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnupdatetailor" buttonType="RAISED" focusTraversable="false" layoutX="139.0" layoutY="461.0" onAction="#loadupdatetailor" prefHeight="100.0" prefWidth="100.0" styleClass="btn_update" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="139.0" layoutY="629.0" onAction="#loadhome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <Label layoutX="139.0" layoutY="229.0" text="Add Tailor">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="120.0" layoutY="394.0" text="Remove Tailor">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="124.0" layoutY="572.0" text="Update Tailor">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="160.0" layoutY="744.0" text="Home">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>
