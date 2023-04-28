@@ -23,7 +23,7 @@ import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import javafx.util.Duration;
 import londoncut.Main;
-import sun.plugin.javascript.navig.Anchor;
+//import sun.plugin.javascript.navig.Anchor;
 
 /**
  * FXML Controller class

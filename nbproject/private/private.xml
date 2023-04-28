@@ -3,22 +3,7 @@
     <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/AddcustomerController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/SuitdetailController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/Customer_2Controller.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/tables/controller/tblUpdateCoatController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/AddcustomerdetailController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/Customerpayment_2Controller.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/RentcoatController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/AddcoatdetailController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/tables/tblProductDelete.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/AddcoatController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/tables/tblCoatRent.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/views/btnstyle.css</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/AddmaterialController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/FXMLDocumentController.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/Main.java</file>
-            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/CustomerpaymentController.java</file>
+            <file>file:/E:/JavJ/londoncut/src/londoncut/controller/HomeOptionsController.java</file>
         </group>
     </open-files>
 </project-private>

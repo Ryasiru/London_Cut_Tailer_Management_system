@@ -131,12 +131,11 @@ public class TailorworkController implements Initializable {
             
             ResultSet result=pstm.executeQuery();
             while(result.next()){
+                System.out.println(result.getInt("total"));
                 String type=result.getString("type");
-                if(type.equals("Shirt")){
+                if(type.equals("shirt")){
                     txtshirt.setText(result.getString("total"));
-                }else if(type.equals("Short")){
-                    txtshort.setText(result.getString("total"));
-                }else if(type.equals("")){
+                }else if(type.equals("short")){
                     txtshort.setText(result.getString("total"));
                 }
                 

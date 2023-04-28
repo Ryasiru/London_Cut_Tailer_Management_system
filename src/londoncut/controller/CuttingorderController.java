@@ -176,7 +176,7 @@ public class CuttingorderController implements Initializable {
     }
     
     private void printCuttingOrder() throws FileNotFoundException, JRException{
-        InputStream in = new FileInputStream("E:\\JavJ\\londoncut\\src\\londoncut\\report\\CuttingOrder.jrxml");
+        InputStream in = new FileInputStream("src/londoncut/report/CuttingOrder.jrxml");
         HashMap para = new HashMap();
         para.put("ordernumber", tblcuttingorder.getSelectionModel().getSelectedItem().getOrdernumber());
         para.put("suitnumber",tblcuttingorder.getSelectionModel().getSelectedItem().getSuitnumber());

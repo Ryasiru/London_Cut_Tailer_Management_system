@@ -17,7 +17,7 @@ import londoncut.tables.tblReturnCoat;
 public class CoatRentController {
 
     public void saveCoatRent(CoatRent rent){
-        String sql="INSERT INTO rentcoat(ordernumber,nic,customername,contact,coatnumber,rentdate,returndate,rentprice) VALUES (?,?,?,?,?,?,?,?)";
+        String sql="INSERT INTO coatrent(ordernumber,nic,customername,contact,coatnumber,rentdate,returndate,rentprice) VALUES (?,?,?,?,?,?,?,?)";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);

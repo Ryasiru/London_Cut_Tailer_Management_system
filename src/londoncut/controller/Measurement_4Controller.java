@@ -67,7 +67,7 @@ import net.sf.jasperreports.view.JasperViewer;
 import static org.apache.poi.hssf.usermodel.HeaderFooter.file;
 import static org.apache.velocity.texen.util.FileUtil.file;
 import static org.apache.velocity.texen.util.FileUtil.file;
-import sun.plugin.javascript.navig.Anchor;
+//import sun.plugin.javascript.navig.Anchor;
 
 /**
  * FXML Controller class
@@ -154,7 +154,7 @@ public class Measurement_4Controller implements Initializable {
 
     private void setOrderData() {
         txtordernumber.setText(new OrdersController().setSelectOrder());
-        String sql = "SELECT c.fname , c.lname , o.orderdate FROM customer c , orders o , orderdetail od WHERE od.ordernumber='"
+        String sql = "SELECT c.fname , c.lname , o.date FROM customer c , orders o , orderdetail od WHERE od.ordernumber='"
                 + txtordernumber.getText() + "' AND od.ordernumber=o.ordernumber AND od.customerid=c.customerid;";
         Connection con = DBConnection.getInstance().getConnection();
         try {
@@ -163,7 +163,7 @@ public class Measurement_4Controller implements Initializable {
             while (result.next()) {
                 txtfname.setText(result.getString("fname"));
                 txtlname.setText(result.getString("lname"));
-                txtorderdate.setText(result.getString("orderdate"));
+                txtorderdate.setText(result.getString("date"));
             }
         } catch (SQLException ex) {
             Logger.getLogger(Measurement_4Controller.class.getName()).log(Level.SEVERE, null, ex);
@@ -194,7 +194,7 @@ public class Measurement_4Controller implements Initializable {
     }
 
     private void printReport() throws JRException, FileNotFoundException {
-        InputStream in = new FileInputStream("E:\\JavJ\\londoncut\\src\\londoncut\\report\\Payment.jrxml");
+        InputStream in = new FileInputStream("src/londoncut/report/Payment.jrxml");
         HashMap para = new HashMap();
         para.put("ordernumber", txtordernumber.getText());
         para.put("order", txtordernumber.getText());

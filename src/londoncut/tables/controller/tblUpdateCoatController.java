@@ -26,7 +26,7 @@ public class tblUpdateCoatController {
             while(result.next()){
                 list.add(new tblUpdateCoat(result.getString("coatnumber"),
                         result.getString("coatcolour"),
-                        result.getInt("rentprice"),
+                        result.getInt("price"),
                         result.getString("status")));
             }
         } catch (SQLException ex) {

@@ -32,7 +32,7 @@ public class tblDeleteCoatController {
             while(result.next()){
                 list.add(new tblDeleteCoat(result.getString("coatnumber"),
                         result.getString("coatcolour"),
-                        result.getInt("rentprice"),
+                        result.getInt("price"),
                         result.getString("status")));
             }
         } catch (SQLException ex) {

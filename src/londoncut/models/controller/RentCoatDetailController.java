@@ -55,9 +55,12 @@ public class RentCoatDetailController {
             pstm.setString(2, coatnumber);
             pstm.setString(3, returndate);
             pstm.executeUpdate();
+            con.close();
         } catch (SQLException ex) {
             Logger.getLogger(RentCoatDetailController.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+
     }
     
     public void deleteRent(String coatnumber,String rdate){

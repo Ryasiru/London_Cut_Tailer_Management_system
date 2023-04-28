@@ -1,8 +1,13 @@
 
 package londoncut.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 public class Customer {
+    
     private String customerid;
     private String fname;
     private String lname;

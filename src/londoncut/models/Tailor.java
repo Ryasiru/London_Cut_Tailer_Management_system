@@ -1,8 +1,14 @@
 
 package londoncut.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 public class Tailor {
+
+    
     private String tailorid;
     private String fname;
     private String lname;
@@ -10,6 +16,8 @@ public class Tailor {
     private int home;
     private int mobile;
     private String nic;
+
+    private double salary;
 
     public Tailor(String tailorid,String fname,String lname,String address,int home,int mobile,String nic){
        this.tailorid=tailorid;
@@ -114,5 +122,13 @@ public class Tailor {
      */
     public void setNic(String nic) {
         this.nic = nic;
+    }
+
+    public double getSalary() {
+        return salary;
+    }
+
+    public void setSalary(double salary) {
+        this.salary = salary;
     }
 }

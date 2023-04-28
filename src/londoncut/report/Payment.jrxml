@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Main" pageWidth="421" pageHeight="595" whenNoDataType="AllSectionsNoDetail" columnWidth="376" leftMargin="20" rightMargin="25" topMargin="25" bottomMargin="20" uuid="9c1ac528-e9b5-4130-92d8-1fb24287f705">
 	<property name="ireport.zoom" value="4.0"/>
-	<property name="ireport.x" value="229"/>
-	<property name="ireport.y" value="1336"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="684"/>
 	<style name="table">
 		<box>
 			<pen lineWidth="1.0" lineColor="#000000"/>
@@ -354,7 +354,7 @@ WHERE so.ordernumber=$P{order} AND so.suitnumber=s.suitnumber]]>
 			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 		</parameter>
 		<queryString>
-			<![CDATA[SELECT coatnumber,returndate,rentprice FROM rentcoat WHERE ordernumber=$P{rentorder};]]>
+			<![CDATA[SELECT coatnumber,returndate,rentprice FROM coatrent WHERE ordernumber=$P{rentorder};]]>
 		</queryString>
 		<field name="coatnumber" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
@@ -397,7 +397,7 @@ WHERE so.ordernumber=$P{order} AND so.suitnumber=s.suitnumber]]>
 		<band height="83" splitType="Stretch">
 			<image>
 				<reportElement x="8" y="0" width="140" height="78" uuid="201582c5-b3ac-44e8-bad6-b5e288a01e3a"/>
-				<imageExpression><![CDATA["E:\\JavJ\\londoncut\\src\\londoncut\\images\\logoFinal.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["src/londoncut/images/logoFinal.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="158" y="18" width="223" height="33" uuid="5ce06fcb-7add-473d-8586-1e797987c3c6"/>

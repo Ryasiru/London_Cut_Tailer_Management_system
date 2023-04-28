@@ -340,7 +340,7 @@
 		<band height="78" splitType="Stretch">
 			<image>
 				<reportElement x="8" y="0" width="140" height="78" uuid="201582c5-b3ac-44e8-bad6-b5e288a01e3a"/>
-				<imageExpression><![CDATA["E:\\JavJ\\londoncut\\src\\londoncut\\images\\logoFinal.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["src/londoncut/images/logoFinal.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="158" y="18" width="223" height="33" uuid="5ce06fcb-7add-473d-8586-1e797987c3c6"/>

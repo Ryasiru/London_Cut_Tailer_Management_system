@@ -12,6 +12,7 @@ import javafx.scene.Scene;
 import javafx.scene.image.Image;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
+import londoncut.db.DBConnection;
 
 /**
  *
@@ -33,6 +34,8 @@ public class Main extends Application {
         stage.resizableProperty().setValue(false);
         stage.initStyle(StageStyle.DECORATED.UNDECORATED);
         stage.show();
+
+        DBConnection.getInstance();
 
     }
 

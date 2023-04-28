@@ -1,7 +1,14 @@
 
 package londoncut.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+
 public class Payment {
+
+    
     private String ordernumber;
     private String paymentdate;
     private double payment;

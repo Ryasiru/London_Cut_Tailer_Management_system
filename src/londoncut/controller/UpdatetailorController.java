@@ -18,7 +18,7 @@ import londoncut.Main;
 import londoncut.models.controller.TailorController;
 import londoncut.tables.controller.tblUpdateTailorController;
 import londoncut.tables.tblUpdateTailor;
-import sun.plugin.javascript.navig.Anchor;
+//import sun.plugin.javascript.navig.Anchor;
 
 /**
  * FXML Controller class

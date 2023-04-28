@@ -14,7 +14,7 @@ import londoncut.models.Tailor;
 public class TailorController {
     static String selectedid=null;
     public void saveTailor(Tailor tailor){
-        String sql="INSERT INTO tailor VALUES(?,?,?,?,?,?,?)";
+        String sql="INSERT INTO tailor VALUES(?,?,?,?,?,?,?,?)";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);
@@ -25,6 +25,7 @@ public class TailorController {
             pstm.setInt(5,tailor.getHome());
             pstm.setInt(6,tailor.getMobile());
             pstm.setString(7,tailor.getNic());
+            pstm.setDouble(8,0);
             
             pstm.executeUpdate();
         } catch (SQLException ex) {

@@ -13,7 +13,7 @@ import londoncut.models.Expense;
 public class ExpenseController {
     
     public void addExpense(Expense exp){
-        String sql="INSERT INTO expense(expdate,description,expense) VALUES (?,?,?)";
+        String sql="INSERT INTO expense(date,description,expense) VALUES (?,?,?)";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);

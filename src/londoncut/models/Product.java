@@ -1,8 +1,13 @@
 
 package londoncut.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 public class Product {
+    
     private String productid;
     private String productname;
     private int unitprice;

@@ -17,13 +17,13 @@ public class tblExpenseController {
     
     public ObservableList<tblExpense > loadData(){
         ObservableList<tblExpense>list=FXCollections.observableArrayList();
-        String sql="SELECT expdate ,description,expense FROM expense ORDER BY expid DESC ";
+        String sql="SELECT date,description,expense FROM expense ORDER BY expenseid DESC ";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);
             ResultSet result= pstm.executeQuery();
             while(result.next()){
-                list.add(new tblExpense(result.getString("expdate"),
+                list.add(new tblExpense(result.getString("date"),
                         result.getString("description"), 
                         result.getDouble("expense")));
             }
@@ -36,7 +36,7 @@ public class tblExpenseController {
     
     public ObservableList<tblExpense> searchExp(String from,String to){
         ObservableList<tblExpense>list=FXCollections.observableArrayList();
-        String sql="SELECT expdate,description,expense FROM expense WHERE expdate BETWEEN ? AND ?";
+        String sql="SELECT date,description,expense FROM expense WHERE expdate BETWEEN ? AND ?";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);
@@ -45,7 +45,7 @@ public class tblExpenseController {
             
             ResultSet result=pstm.executeQuery();
             while(result.next()){
-                list.add(new tblExpense(result.getString("expdate"),
+                list.add(new tblExpense(result.getString("date"),
                         result.getString("description"), 
                         result.getDouble("expense")));
             }

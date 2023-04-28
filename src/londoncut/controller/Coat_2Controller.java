@@ -19,7 +19,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.AnchorPane;
 import javafx.stage.Stage;
 import londoncut.Main;
-import sun.plugin.javascript.navig.Anchor;
+
 
 /**
  * FXML Controller class

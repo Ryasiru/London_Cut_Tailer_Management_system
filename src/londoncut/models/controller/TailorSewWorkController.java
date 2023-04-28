@@ -16,7 +16,7 @@ public class TailorSewWorkController {
     static int tot=0;
     
     public void saveTailorSewWork(TailorSewWork t){
-        String sql="INSERT INTO tailorsewwork VALUES (?,?,?,?,?,?)";
+        String sql="INSERT INTO tailorsewwork() VALUES (?,?,?,?,?,?)";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);

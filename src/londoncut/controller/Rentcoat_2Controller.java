@@ -84,14 +84,14 @@ public class Rentcoat_2Controller implements Initializable {
 
     private ObservableList<tblRentCoat> loadData() {
         ObservableList<tblRentCoat> list = FXCollections.observableArrayList();
-        String sql = "SELECT coatnumber , rentprice FROM coat WHERE status='Available'";
+        String sql = "SELECT coatnumber , price FROM coat WHERE status='Available'";
         Connection con = DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm = con.prepareStatement(sql);
             ResultSet result = pstm.executeQuery();
             while (result.next()) {
                 list.add(new tblRentCoat(result.getString("coatnumber"),
-                        result.getDouble("rentprice")));
+                        result.getDouble("price")));
             }
         } catch (SQLException ex) {
             Logger.getLogger(Rentcoat_2Controller.class.getName()).log(Level.SEVERE, null, ex);
@@ -102,7 +102,7 @@ public class Rentcoat_2Controller implements Initializable {
 
     private ObservableList<tblRentCoatDetail> loadData_2() {
         ObservableList<tblRentCoatDetail> list = FXCollections.observableArrayList();
-        String sql = "SELECT coatnumber FROM rentcoat WHERE ordernumber=?";
+        String sql = "SELECT coatnumber FROM coatrent WHERE ordernumber=?";
         Connection con = DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm = con.prepareStatement(sql);

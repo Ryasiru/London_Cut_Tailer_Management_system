@@ -1,8 +1,13 @@
 
 package londoncut.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 public class Coat {
+    
      private String coatnumber;
      private String coatcolour;
      private int price;

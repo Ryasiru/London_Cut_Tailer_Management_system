@@ -29,7 +29,7 @@ public class tblProductDeleteControlelr {
                         result.getString("productname"),
                         result.getInt("unitprice"),
                         result.getInt("qty"),
-                        result.getString("purchaseddate")));
+                        result.getString("date")));
             }
         } catch (SQLException ex) {
             Logger.getLogger(tblProductDeleteControlelr.class.getName()).log(Level.SEVERE, null, ex);

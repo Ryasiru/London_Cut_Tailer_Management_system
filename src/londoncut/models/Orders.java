@@ -1,8 +1,14 @@
 
 package londoncut.models;
 
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
 
 public class Orders {
+
+    
     private String ordernumber;
     private String date;
 
