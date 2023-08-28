@@ -307,7 +307,7 @@ public class RentcoatController implements Initializable {
     }
 
     private void printCoatRent() throws FileNotFoundException, JRException {
-        InputStream in = new FileInputStream("E:\\JavJ\\londoncut\\src\\londoncut\\report\\CoatRent.jrxml");
+        InputStream in = new FileInputStream("src/londoncut/report/CoatRent.jrxml");
         HashMap para = new HashMap();
         para.put("ordernumber", txtordernumber.getText());
         para.put("name", txtcustomername.getText());

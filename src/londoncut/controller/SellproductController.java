@@ -241,6 +241,7 @@ public class SellproductController implements Initializable {
 
     private void printProduct() throws FileNotFoundException, JRException {
         InputStream in = new FileInputStream("src/londoncut/report/Product.jrxml");
+        System.out.println(txtorderid.getText()+""+txttotal.getText());
         HashMap para = new HashMap();
         para.put("ordernumber", txtorderid.getText());
         para.put("total", txttotal.getText());
@@ -253,12 +254,11 @@ public class SellproductController implements Initializable {
     private void printReport(ActionEvent event) throws FileNotFoundException, JRException, SQLException {
         printProduct();
         tblsellproduct.getItems().clear();
-        txtorderid.setText(new OrdersController().setOrdernumber());
-        new OrdersController().saveOrder(new Orders(txtorderid.getText(), localDate.toString()));
         comboProduct.getEditor().setText(null);
         txtprice.setText(null);
         txtqty.setText(null);
         txttotal.setText(null);
+
     }
 
     private void clearFields() {

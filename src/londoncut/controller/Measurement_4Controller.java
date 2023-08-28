@@ -134,21 +134,21 @@ public class Measurement_4Controller implements Initializable {
         if (radioFull.isSelected()) {
             new PaymentController().savePayment(new Payment(txtordernumber.getText(), txtorderdate.getText(),
                     Double.parseDouble(txtbill.getText()), Double.parseDouble(txtbill.getText())));
-            printReport();
-            loadWindow(event);
+
         } else if (radioAdvance.isSelected()) {
             if (txtadvance.getText().isEmpty()) {
                 MessageAlert.ShowMessage("No Advance has Done...", "Payment Error", Alert.AlertType.ERROR);
             } else {
                 new PaymentController().savePayment(new Payment(txtordernumber.getText(), txtorderdate.getText(),
                         Double.parseDouble(txtadvance.getText()), Double.parseDouble(txtbill.getText())));
-                printReport();
-                loadWindow(event);
             }
 
         } else {
             MessageAlert.ShowMessage("No Payments has Done...", "Payment Error", Alert.AlertType.ERROR);
         }
+
+        printReport();
+        loadWindow(event);
 
     }
 
@@ -195,6 +195,7 @@ public class Measurement_4Controller implements Initializable {
 
     private void printReport() throws JRException, FileNotFoundException {
         InputStream in = new FileInputStream("src/londoncut/report/Payment.jrxml");
+        System.out.printf(txtordernumber.getText());
         HashMap para = new HashMap();
         para.put("ordernumber", txtordernumber.getText());
         para.put("order", txtordernumber.getText());

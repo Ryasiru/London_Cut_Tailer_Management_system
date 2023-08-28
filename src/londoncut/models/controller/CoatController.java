@@ -69,7 +69,7 @@ public class CoatController {
     }
     
     public void updateCoat(String price,String status,String coatnumber){
-        String sql="UPDATE coat SET rentprice=? , status=? WHERE coatnumber=?";
+        String sql="UPDATE coat SET price=? , status=? WHERE coatnumber=?";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);

@@ -354,7 +354,7 @@ WHERE so.ordernumber=$P{order} AND so.suitnumber=s.suitnumber]]>
 			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 		</parameter>
 		<queryString>
-			<![CDATA[SELECT coatnumber,returndate,rentprice FROM coatrent WHERE ordernumber=$P{rentorder};]]>
+			<![CDATA[SELECT coatnumber,returndate,rentprice FROM rentcoat WHERE ordernumber=$P{rentorder};]]>
 		</queryString>
 		<field name="coatnumber" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>

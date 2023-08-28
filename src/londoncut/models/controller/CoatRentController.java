@@ -17,7 +17,7 @@ import londoncut.tables.tblReturnCoat;
 public class CoatRentController {
 
     public void saveCoatRent(CoatRent rent){
-        String sql="INSERT INTO coatrent(ordernumber,nic,customername,contact,coatnumber,rentdate,returndate,rentprice) VALUES (?,?,?,?,?,?,?,?)";
+        String sql="INSERT INTO rentcoat(ordernumber,nic,customername,contact,coatnumber,rentdate,returndate,rentprice) VALUES (?,?,?,?,?,?,?,?)";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);
@@ -73,6 +73,7 @@ public class CoatRentController {
         String sql="DELETE FROM rentcoat WHERE nic=? AND coatnumber=? AND rentdate=?";
         Connection con=DBConnection.getInstance().getConnection();
         try {
+
             PreparedStatement pstm=con.prepareStatement(sql);
             pstm.setString(1, nic);
             pstm.setString(2, coatnumber);
@@ -86,10 +87,11 @@ public class CoatRentController {
     }
     
     public void updateCoatStatus(String data){
-        String sql="UPDATE coat SET status='Available' WHERE coatnumber='"+data+"'";
+        String sql="UPDATE coat SET status='Available' WHERE coatnumber=?";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);
+            pstm.setString(1,data);
             pstm.executeUpdate();
         } catch (SQLException ex) {
             Logger.getLogger(CoatRentController.class.getName()).log(Level.SEVERE, null, ex);

@@ -102,7 +102,7 @@ public class Rentcoat_2Controller implements Initializable {
 
     private ObservableList<tblRentCoatDetail> loadData_2() {
         ObservableList<tblRentCoatDetail> list = FXCollections.observableArrayList();
-        String sql = "SELECT coatnumber FROM coatrent WHERE ordernumber=?";
+        String sql = "SELECT coatnumber FROM rentcoat WHERE ordernumber=?";
         Connection con = DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm = con.prepareStatement(sql);

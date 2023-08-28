@@ -71,7 +71,7 @@ public class AddcoatdetailController implements Initializable {
             ResultSet result=pstm.executeQuery();
             while(result.next()){
                 txtcolour.setText(result.getString("coatcolour"));
-                txtprice.setText(result.getString("rentprice"));
+                txtprice.setText(result.getString("price"));
                 comboStatus.getEditor().setText(result.getString("status"));
             }
         } catch (SQLException ex) {

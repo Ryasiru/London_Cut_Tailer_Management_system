@@ -58,8 +58,6 @@ public class SuitdetailController implements Initializable {
 
     private Measurement_4Controller controller;
     
-    private double price=0;
-    
 
     /**
      * Initializes the controller class.
@@ -87,6 +85,9 @@ public class SuitdetailController implements Initializable {
 
     @FXML
     private void updateSuitPrice(ActionEvent event) throws IOException {
+
+        double price=0;
+
         new SuitController().updateSuitPrice(txtid.getText(), Integer.parseInt(txtqty.getText()), Double.parseDouble(txtprice.getText()));
         tblsuitdetail.setItems(new tblSuitDetailController().loadData());
         TableColumn<tblSuitDetail, Double> column = colPrice;
@@ -99,7 +100,6 @@ public class SuitdetailController implements Initializable {
 
         }
         controller.setSuitTotal(price);
-        price=0;
         txtid.setText(null);
         txtprice.setText(null);
         txtqty.setText(null);
