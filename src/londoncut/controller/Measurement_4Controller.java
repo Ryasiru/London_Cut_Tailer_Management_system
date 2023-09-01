@@ -99,10 +99,10 @@ public class Measurement_4Controller implements Initializable {
     @FXML
     private JFXRadioButton radioAdvance;
 
-    private double total;
-    static double suittot;
-    static double renttot;
-    static int producttot;
+    public static double total;
+    public static double suittot;
+    public static double renttot;
+    public static int producttot;
 
     @FXML
     private AnchorPane root;
@@ -124,16 +124,20 @@ public class Measurement_4Controller implements Initializable {
             Logger.getLogger(Measurement_4Controller.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        txtbill.setText(String.valueOf(total));
-
     }
 
     @FXML
     private void backHome(ActionEvent event) throws IOException, JRException {
-
+        total=0;
+        suittot=0;
+        renttot=0;
+        producttot=0;
         if (radioFull.isSelected()) {
             new PaymentController().savePayment(new Payment(txtordernumber.getText(), txtorderdate.getText(),
                     Double.parseDouble(txtbill.getText()), Double.parseDouble(txtbill.getText())));
+
+            printReport();
+            loadWindow(event);
 
         } else if (radioAdvance.isSelected()) {
             if (txtadvance.getText().isEmpty()) {
@@ -141,14 +145,14 @@ public class Measurement_4Controller implements Initializable {
             } else {
                 new PaymentController().savePayment(new Payment(txtordernumber.getText(), txtorderdate.getText(),
                         Double.parseDouble(txtadvance.getText()), Double.parseDouble(txtbill.getText())));
+
+                printReport();
+                loadWindow(event);
             }
 
         } else {
             MessageAlert.ShowMessage("No Payments has Done...", "Payment Error", Alert.AlertType.ERROR);
         }
-
-        printReport();
-        loadWindow(event);
 
     }
 
@@ -219,10 +223,13 @@ public class Measurement_4Controller implements Initializable {
     public void setSuitTotal(double tot) {
         if (suittot == 0) {
             suittot = tot;
-            total += suittot;
+            total = total + suittot;
         } else if (tot >= suittot) {
             total += (tot - suittot);
             suittot = tot;
+        } else if (tot==0) {
+            total -= suittot;
+            suittot= tot;
         } else {
             total -= (suittot - tot);
             suittot = tot;
@@ -233,9 +240,13 @@ public class Measurement_4Controller implements Initializable {
     public void setRentTotal(double tot) {
         if (renttot == 0) {
             renttot = tot;
-            total += renttot;
+            total = total + renttot;
+        } else if (tot >= renttot) {
+            total += (tot - renttot);
+            renttot = tot;
         } else {
-            total += tot;
+            total -= (renttot - tot);
+            renttot = tot;
         }
         txtbill.setText(String.valueOf(total));
     }
@@ -247,6 +258,9 @@ public class Measurement_4Controller implements Initializable {
         } else if (tot >= producttot) {
             total += (tot - producttot);
             producttot = tot;
+        } else if (tot==0) {
+            total -= producttot;
+            producttot=tot;
         } else {
             total -= (producttot - tot);
             producttot = tot;
@@ -284,6 +298,7 @@ public class Measurement_4Controller implements Initializable {
         root.getChildren().add(pane);
         ProductsellController  controller = parent.<ProductsellController>getController();
         controller.setController(this);
+
     }
 
 }

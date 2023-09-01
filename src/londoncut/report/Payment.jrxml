@@ -326,12 +326,10 @@
 	</style>
 	<subDataset name="OrderDetail" uuid="61950215-f5eb-4050-8983-4ce108cf3341">
 		<parameter name="order" class="java.lang.String">
-			<defaultValueExpression><![CDATA["P050"]]></defaultValueExpression>
+			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
 		</parameter>
-		<parameter name="bill" class="java.lang.String"/>
 		<queryString>
-			<![CDATA[SELECT s.suitnumber,s.type,s.deliverydate,s.qty,s.price FROM suit s,suitorder so 
-WHERE so.ordernumber=$P{order} AND so.suitnumber=s.suitnumber]]>
+			<![CDATA[SELECT s.suitnumber,s.type,s.deliverydate,s.qty,s.price FROM suit s,suitorder so WHERE so.ordernumber=$P{order} AND so.suitnumber=s.suitnumber;]]>
 		</queryString>
 		<field name="suitnumber" class="java.lang.String">
 			<fieldDescription><![CDATA[]]></fieldDescription>
@@ -465,7 +463,9 @@ WHERE so.ordernumber=$P{order} AND so.suitnumber=s.suitnumber]]>
 				<reportElement key="table 12" style="table 12" x="2" y="71" width="113" height="50" uuid="a8e9ee4f-bb00-40fe-a51a-9e8fc90400e3"/>
 				<jr:table xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
 					<datasetRun subDataset="OrderDetail" uuid="3b35fddc-5396-4b5f-a73b-fcbbe86287d7">
-						<connectionExpression><![CDATA[$P{REPORT_CONNECTION}]]></connectionExpression>
+						<datasetParameter name="order">
+							<datasetParameterExpression><![CDATA[$P{ordernumber}]]></datasetParameterExpression>
+						</datasetParameter>
 					</datasetRun>
 					<jr:column width="90" uuid="c31a9017-cc49-4267-a7ee-5393ffaf1c56">
 						<jr:columnHeader style="table 12_CH" height="30" rowSpan="1">

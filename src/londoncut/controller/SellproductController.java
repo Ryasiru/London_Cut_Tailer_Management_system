@@ -117,11 +117,13 @@ public class SellproductController implements Initializable {
     @Override
     public void initialize(URL url, ResourceBundle rb) {
         Animation();
+        txtorderid.setText(new OrdersController().setOrdernumber());
         initiateTable();
         Date date = new Date();
         Instant instant = date.toInstant();
+
         localDate = instant.atZone(ZoneId.systemDefault()).toLocalDate();
-        txtorderid.setText(new OrdersController().setOrdernumber());
+
         try {
             new OrdersController().saveOrder(new Orders(txtorderid.getText(), localDate.toString()));
         } catch (SQLException ex) {
@@ -145,12 +147,15 @@ public class SellproductController implements Initializable {
         colName.setCellValueFactory(new PropertyValueFactory<>("name"));
         colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+
+        tblsellproduct.setItems(new tblSellProductController().loadData(txtorderid.getText()));
     }
 
     @FXML
     private void autoLoad(KeyEvent event) {
         comboProduct.setItems(new ProductController().loadCombo(comboProduct.getEditor().getText()));
         comboProduct.show();
+        tblsellproduct.setItems(new tblSellProductController().loadData(txtorderid.getText()));
     }
 
     @FXML

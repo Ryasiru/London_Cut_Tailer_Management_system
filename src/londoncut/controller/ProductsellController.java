@@ -118,6 +118,7 @@ public class ProductsellController implements Initializable {
         colProduct.setCellValueFactory(new PropertyValueFactory<>("product"));
         colQty.setCellValueFactory(new PropertyValueFactory<>("qty"));
         colPrice.setCellValueFactory(new PropertyValueFactory<>("price"));
+        tblproduct.setItems(new tblProductController().loadData(new OrdersController().setSelectOrder()));
     }
 
     public void setController(Measurement_4Controller controller) {
@@ -137,6 +138,7 @@ public class ProductsellController implements Initializable {
 
     @FXML
     private void deleteProduct(ActionEvent event) {
+        price = 0;
         boolean bool = MessageAlert.confirm(tblproduct.getSelectionModel().getSelectedItem().getProduct());
         if (bool) {
             new SellProductController().deleteOrder(new OrdersController().setSelectOrder(),
@@ -144,6 +146,17 @@ public class ProductsellController implements Initializable {
             new ProductController().setQty(tblproduct.getSelectionModel().getSelectedItem().getProduct(),
                     tblproduct.getSelectionModel().getSelectedItem().getQty());
             tblproduct.setItems(new tblProductController().loadData(new OrdersController().setSelectOrder()));
+
+            TableColumn<tblProduct, Integer> column = colPrice;
+            List<Integer> list = new ArrayList();
+            for (tblProduct item : tblproduct.getItems()) {
+                list.add(column.getCellObservableValue(item).getValue());
+            }
+            for (int i = 0; i < tblproduct.getItems().size(); i++) {
+                price += list.get(i);
+
+            }
+            controller.setProductTotal(price);
         }
 
     }

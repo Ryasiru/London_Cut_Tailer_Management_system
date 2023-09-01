@@ -217,7 +217,7 @@ public class Rentcoat_2Controller implements Initializable {
         }
         if(total>=Double.parseDouble(txtupdaterentprice.getText())){
             double temp=total-Double.parseDouble(txtupdaterentprice.getText());
-            controller.setRentTotal(-temp);
+            controller.setRentTotal(temp);
         }else{
             double temp=Double.parseDouble(txtupdaterentprice.getText())-total;
             controller.setRentTotal(temp);
