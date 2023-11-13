@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="manageproductPane" prefHeight="820.0" prefWidth="1248.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.ManageproductController">
+   <children>
+      <Label layoutX="250.0" layoutY="31.0" text="Manage Product" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="47.0" />
+         </font>
+      </Label>
+      <Line endX="90.0" endY="1.52587890625E-5" layoutX="138.0" layoutY="65.0" startX="-100.0" />
+      <Line endX="478.0" endY="1.52587890625E-5" layoutX="748.0" layoutY="66.0" startX="-100.0" />
+      <JFXButton fx:id="btnaddproduct" buttonType="RAISED" focusTraversable="false" layoutX="194.0" layoutY="122.0" onAction="#loadaddProduct" prefHeight="100.0" prefWidth="100.0" styleClass="btn_add" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btndeleteproduct" buttonType="RAISED" focusTraversable="false" layoutX="194.0" layoutY="300.0" onAction="#loaddeleteproduct" prefHeight="100.0" prefWidth="100.0" styleClass="btn_delete" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnupdateproduct" buttonType="RAISED" focusTraversable="false" layoutX="194.0" layoutY="470.0" onAction="#loadupdateproduct" prefHeight="100.0" prefWidth="100.0" styleClass="btn_update" stylesheets="@btnstyle.css" />
+      <AnchorPane fx:id="rootPane" layoutX="419.0" layoutY="115.0" prefHeight="661.0" prefWidth="801.0" AnchorPane.bottomAnchor="44.0" AnchorPane.leftAnchor="419.0" AnchorPane.rightAnchor="28.0" AnchorPane.topAnchor="115.0" />
+      <Label alignment="CENTER" layoutX="188.0" layoutY="234.0" text="Add Product" AnchorPane.topAnchor="234.0">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label alignment="CENTER" layoutX="169.0" layoutY="423.0" text="Remove Product">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="211.0" layoutY="590.0" text="Update">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnhome" buttonType="RAISED" focusTraversable="false" layoutX="194.0" layoutY="643.0" onAction="#loadHome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <Label layoutX="217.0" layoutY="753.0" text="Home">
+         <font>
+            <Font name="Arial" size="20.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

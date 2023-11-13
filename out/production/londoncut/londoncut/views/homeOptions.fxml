@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" fx:id="optionPane" prefHeight="382.0" prefWidth="1255.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.HomeOptionsController">
+   <children>
+      <GridPane layoutX="26.0" layoutY="18.0" prefHeight="343.0" prefWidth="1210.0" AnchorPane.bottomAnchor="21.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="19.0" AnchorPane.topAnchor="18.0">
+        <columnConstraints>
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+          <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints minHeight="10.0" prefHeight="30.0" valignment="TOP" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <JFXButton fx:id="btnmeasurement" buttonType="RAISED" focusTraversable="false" onAction="#nextMeasurementPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_measurement" stylesheets="@btnstyle.css" />
+            <JFXButton fx:id="btncustomer" buttonType="RAISED" focusTraversable="false" onAction="#nextCustomerPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_customer" stylesheets="@btnstyle.css" GridPane.columnIndex="1" />
+            <JFXButton fx:id="btnworkorder" buttonType="RAISED" focusTraversable="false" onAction="#nextWorkOrderPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_workorder" stylesheets="@btnstyle.css" GridPane.columnIndex="2" />
+            <JFXButton fx:id="btncoat" buttonType="RAISED" focusTraversable="false" onAction="#nextCoatPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_coat" stylesheets="@btnstyle.css" GridPane.columnIndex="3" />
+            <JFXButton fx:id="btnproduct" buttonType="RAISED" focusTraversable="false" onAction="#nextProductPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_product" stylesheets="@btnstyle.css" GridPane.rowIndex="1" />
+            <JFXButton fx:id="btnmaterial" buttonType="RAISED" focusTraversable="false" onAction="#nextMaterialPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_material" stylesheets="@btnstyle.css" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+            <JFXButton fx:id="btntailor" buttonType="RAISED" focusTraversable="false" onAction="#nextTailorPage" prefHeight="100.0" prefWidth="100.0" styleClass="btn_tailor" stylesheets="@btnstyle.css" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <JFXButton fx:id="btnpayment" buttonType="RAISED" focusTraversable="false" onAction="#loadPayment_2" prefHeight="100.0" prefWidth="100.0" styleClass="btn_payment" stylesheets="@btnstyle.css" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+            <Label focusTraversable="false" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Measurement" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font>
+            </Label>
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Customer" GridPane.columnIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Work Order" GridPane.columnIndex="2" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Coat Renting" GridPane.columnIndex="3" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Products" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Materials" GridPane.columnIndex="1" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" prefHeight="68.0" prefWidth="123.0" text="Tailors" GridPane.columnIndex="2" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+            <Label alignment="CENTER" focusTraversable="false" mouseTransparent="true" prefHeight="68.0" prefWidth="123.0" text="Payments" GridPane.columnIndex="3" GridPane.rowIndex="1" GridPane.valignment="BOTTOM">
+               <font>
+                  <Font name="Arial" size="20.0" />
+               </font></Label>
+         </children>
+      </GridPane>
+   </children>
+</AnchorPane>

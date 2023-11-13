@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="725.0" prefWidth="1158.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.ExpenceController">
+   <children>
+      <Label layoutX="254.0" layoutY="14.0" text="Expenses" textFill="#4400ff">
+         <font>
+            <Font name="Malgun Gothic" size="47.0" />
+         </font>
+      </Label>
+      <Line endX="491.0" layoutX="637.0" layoutY="48.0" startX="-143.0" />
+      <Line endX="100.0" layoutX="126.0" layoutY="48.0" startX="-100.0" />
+      <Label layoutX="120.0" layoutY="101.0" text="Date">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="87.0" layoutY="192.0" text="Expense">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="57.0" layoutY="286.0" text="Description">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtexpence" layoutX="189.0" layoutY="192.0" />
+      <TextField fx:id="txtdesc" layoutX="189.0" layoutY="287.0" prefHeight="31.0" prefWidth="247.0" />
+      <Line endX="-100.0" endY="630.0" layoutX="576.0" layoutY="72.0" startX="-100.0" />
+      <TableView fx:id="tblexpense" layoutX="512.0" layoutY="202.0" prefHeight="468.0" prefWidth="622.0">
+        <columns>
+          <TableColumn fx:id="colDate" prefWidth="145.0" text="Expense Date" />
+            <TableColumn fx:id="colDesc" prefWidth="306.0" text="Description" />
+            <TableColumn fx:id="colExpense" prefWidth="170.0" text="Expence" />
+        </columns>
+      </TableView>
+      <Label layoutX="512.0" layoutY="72.0" text="From">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="512.0" layoutY="126.0" text="To">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <JFXButton fx:id="btnadd" buttonType="RAISED" focusTraversable="false" layoutX="204.0" layoutY="355.0" onAction="#addExpense" prefHeight="100.0" prefWidth="100.0" styleClass="btn_add" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnhome" buttonType="RAISED" layoutX="204.0" layoutY="562.0" onAction="#loadHome" prefHeight="100.0" prefWidth="100.0" styleClass="btn_home" stylesheets="@btnstyle.css" />
+      <JFXButton fx:id="btnsearch" buttonType="RAISED" focusTraversable="false" layoutX="921.0" layoutY="67.0" onAction="#searchExpense" prefHeight="100.0" prefWidth="100.0" styleClass="btn_search" stylesheets="@btnstyle.css" />
+      <JFXDatePicker fx:id="expDate" layoutX="189.0" layoutY="111.0" onAction="#setExpDate" />
+      <JFXDatePicker fx:id="fromDate" layoutX="579.0" layoutY="73.0" onAction="#setFromDAte" />
+      <JFXDatePicker fx:id="toDate" layoutX="579.0" layoutY="127.0" onAction="#setToDate" />
+   </children>
+</AnchorPane>

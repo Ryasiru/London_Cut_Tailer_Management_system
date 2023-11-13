@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="455.0" prefWidth="731.0" style="-fx-background-color: white;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="londoncut.controller.Rentcoat_2Controller">
+   <children>
+      <TableView fx:id="tblrentcoat" layoutX="14.0" layoutY="45.0" onMouseClicked="#loadFields" prefHeight="254.0" prefWidth="322.0">
+        <columns>
+          <TableColumn fx:id="colNumber" prefWidth="139.0" text="Coat Number" />
+            <TableColumn fx:id="colPrice" prefWidth="182.0" text="Rent Price" />
+        </columns>
+      </TableView>
+      <TableView fx:id="tblrent" layoutX="456.0" layoutY="14.0" onMouseClicked="#loadToFields" prefHeight="254.0" prefWidth="140.0">
+         <columns>
+            <TableColumn fx:id="colNumberRent" prefWidth="139.0" text="Coat Number" />
+         </columns>
+      </TableView>
+      <Label layoutX="14.0" layoutY="325.0" text="Return Date">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="33.0" layoutY="383.0" text="Rent Price">
+         <font>
+            <Font size="22.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtrentprice" layoutX="144.0" layoutY="383.0" />
+      <JFXButton fx:id="btnadd" buttonType="RAISED" focusTraversable="false" layoutX="347.0" layoutY="219.0" onAction="#addRentCoat" prefHeight="80.0" prefWidth="80.0" styleClass="btn_plus" stylesheets="@btnstyle.css" />
+      <Line endX="-100.0" endY="417.0" layoutX="536.0" layoutY="19.0" startX="-100.0" />
+      <Label layoutX="446.0" layoutY="326.0" text="Return Date">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label layoutX="465.0" layoutY="384.0" text="Rent Price">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <TextField fx:id="txtupdaterentprice" layoutX="567.0" layoutY="384.0" prefHeight="31.0" prefWidth="158.0" />
+      <JFXButton fx:id="btndelete" buttonType="RAISED" focusTraversable="false" layoutX="614.0" layoutY="61.0" onAction="#deleteRentCoat" prefHeight="80.0" prefWidth="80.0" styleClass="btn_delete2" stylesheets="@btnstyle.css" />
+<!--      <JFXButton fx:id="btnupdate" buttonType="RAISED" focusTraversable="false" layoutX="614.0" layoutY="188.0" onAction="#updateRentCoat" prefHeight="80.0" prefWidth="80.0" styleClass="btn_update2" stylesheets="@btnstyle.css" />-->
+      <JFXDatePicker fx:id="returndate" layoutX="144.0" layoutY="327.0" onAction="#setDateReturn" prefHeight="31.0" prefWidth="219.0" />
+      <JFXDatePicker fx:id="updatereturn" layoutX="567.0" layoutY="327.0" onAction="#setDateUpdate" prefHeight="31.0" prefWidth="170.0" />
+   </children>
+</AnchorPane>
