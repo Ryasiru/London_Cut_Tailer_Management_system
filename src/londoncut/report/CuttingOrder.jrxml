@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!-- Created with Jaspersoft Studio version 6.20.3.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
-<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Main" pageWidth="421" pageHeight="595" whenNoDataType="AllSectionsNoDetail" columnWidth="376" leftMargin="20" rightMargin="25" topMargin="25" bottomMargin="20" uuid="9c1ac528-e9b5-4130-92d8-1fb24287f705">
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="" name="Main" pageWidth="421" pageHeight="595" whenNoDataType="AllSectionsNoDetail" columnWidth="376" leftMargin="20" rightMargin="25" topMargin="25" bottomMargin="20" uuid="9c1ac528-e9b5-4130-92d8-1fb24287f705">
 	<property name="ireport.zoom" value="2.0"/>
 	<property name="ireport.x" value="0"/>
 	<property name="ireport.y" value="403"/>
@@ -325,23 +325,23 @@
 			<pen lineWidth="0.5" lineColor="#000000"/>
 		</box>
 	</style>
-	<subDataset name="RentOrder" uuid="3e165f2e-c0e4-4263-8f33-0a5e73b2dc36">
-		<parameter name="rentorder" class="java.lang.String">
-			<defaultValueExpression><![CDATA[]]></defaultValueExpression>
-		</parameter>
-		<queryString>
-			<![CDATA[SELECT coatnumber,returndate,rentprice FROM coatrent WHERE ordernumber=$P{rentorder};]]>
-		</queryString>
-		<field name="coatnumber" class="java.lang.String">
-			<fieldDescription><![CDATA[]]></fieldDescription>
-		</field>
-		<field name="returndate" class="java.sql.Date">
-			<fieldDescription><![CDATA[]]></fieldDescription>
-		</field>
-		<field name="rentprice" class="java.lang.Double">
-			<fieldDescription><![CDATA[]]></fieldDescription>
-		</field>
-	</subDataset>
+<!--	<subDataset name="RentOrder" uuid="3e165f2e-c0e4-4263-8f33-0a5e73b2dc36">-->
+<!--		<parameter name="rentorder" class="java.lang.String">-->
+<!--			<defaultValueExpression><![CDATA[]]></defaultValueExpression>-->
+<!--		</parameter>-->
+<!--		<queryString>-->
+<!--			<![CDATA[SELECT coatnumber,returndate,rentprice FROM coatrent WHERE ordernumber=$P{rentorder};]]>-->
+<!--		</queryString>-->
+<!--		<field name="coatnumber" class="java.lang.String">-->
+<!--			<fieldDescription><![CDATA[]]></fieldDescription>-->
+<!--		</field>-->
+<!--		<field name="returndate" class="java.sql.Date">-->
+<!--			<fieldDescription><![CDATA[]]></fieldDescription>-->
+<!--		</field>-->
+<!--		<field name="rentprice" class="java.lang.Double">-->
+<!--			<fieldDescription><![CDATA[]]></fieldDescription>-->
+<!--		</field>-->
+<!--	</subDataset>-->
 	<parameter name="ordernumber" class="java.lang.String"/>
 	<parameter name="suitnumber" class="java.lang.String">
 		<defaultValueExpression><![CDATA[]]></defaultValueExpression>
@@ -375,12 +375,12 @@ FROM cuttingorder WHERE ordernumber=$P{ordernumber} AND suitnumber=$P{suitnumber
 		<band height="83" splitType="Stretch">
 			<image>
 				<reportElement x="8" y="0" width="140" height="78" uuid="201582c5-b3ac-44e8-bad6-b5e288a01e3a"/>
-				<imageExpression><![CDATA["src/londoncut/images/logoFinal.jpg"]]></imageExpression>
+				<imageExpression><![CDATA["E:\\londoncut\\src\\londoncut\\images\\logoFinal.jpg"]]></imageExpression>
 			</image>
 			<staticText>
 				<reportElement x="158" y="18" width="223" height="33" uuid="5ce06fcb-7add-473d-8586-1e797987c3c6"/>
 				<textElement>
-					<font fontName="Bodoni MT" size="22"/>
+					<font fontName="Serif" size="22"/>
 				</textElement>
 				<text><![CDATA[The LondonCut Tailors]]></text>
 			</staticText>

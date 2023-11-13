@@ -125,10 +125,8 @@ public class CuttingorderController implements Initializable {
     private void printOrder(ActionEvent event) throws FileNotFoundException, JRException {
         if(tblcuttingorder.getSelectionModel().isEmpty()){
             MessageAlert.ShowMessage("No data is Selected...", "Error", Alert.AlertType.ERROR);
-        }else if(txtqty.getText().isEmpty()){
-            MessageAlert.ShowMessage("No quantity is written...", "Error", Alert.AlertType.ERROR);
         }else{
-            new MaterialController().updateQty(txtmaterial.getText(), txtquality.getText(), Double.parseDouble(txtqty.getText()));
+//            new MaterialController().updateQty(txtmaterial.getText(), txtquality.getText(), Double.parseDouble(txtqty.getText()));
             new TailorSewWorkController().saveTailorSewWork(new TailorSewWork(tblcuttingorder.getSelectionModel().getSelectedItem().getOrdernumber(),
                     tblcuttingorder.getSelectionModel().getSelectedItem().getSuitnumber(),
                     tblcuttingorder.getSelectionModel().getSelectedItem().getType(), tblcuttingorder.getSelectionModel().getSelectedItem().getMeasurement(),
@@ -176,7 +174,7 @@ public class CuttingorderController implements Initializable {
     }
     
     private void printCuttingOrder() throws FileNotFoundException, JRException{
-        InputStream in = new FileInputStream("src/londoncut/report/CuttingOrder.jrxml");
+        InputStream in = new FileInputStream("E:\\londoncut\\src\\londoncut\\report\\CuttingOrder.jrxml");
         HashMap para = new HashMap();
         para.put("ordernumber", tblcuttingorder.getSelectionModel().getSelectedItem().getOrdernumber());
         para.put("suitnumber",tblcuttingorder.getSelectionModel().getSelectedItem().getSuitnumber());

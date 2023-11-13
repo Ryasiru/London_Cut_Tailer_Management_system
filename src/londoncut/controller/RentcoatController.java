@@ -217,9 +217,9 @@ public class RentcoatController implements Initializable {
 
     @FXML
     private void loadToFields(MouseEvent event) {
-        txtnumber.setText(tblcoatrentmanage.getSelectionModel().getSelectedItem().getNumber());
-        updatereturndate.getEditor().setText(tblcoatrentmanage.getSelectionModel().getSelectedItem().getReturndate());
-        txtupdateprice.setText(String.valueOf(tblcoatrentmanage.getSelectionModel().getSelectedItem().getPrice()));
+//        txtnumber.setText(tblcoatrentmanage.getSelectionModel().getSelectedItem().getNumber());
+//        updatereturndate.getEditor().setText(tblcoatrentmanage.getSelectionModel().getSelectedItem().getReturndate());
+//        txtupdateprice.setText(String.valueOf(tblcoatrentmanage.getSelectionModel().getSelectedItem().getPrice()));
     }
 
     @FXML
@@ -307,7 +307,7 @@ public class RentcoatController implements Initializable {
     }
 
     private void printCoatRent() throws FileNotFoundException, JRException {
-        InputStream in = new FileInputStream("src/londoncut/report/CoatRent.jrxml");
+        InputStream in = new FileInputStream("E:\\londoncut\\src\\londoncut\\report\\CoatRent.jrxml");
         HashMap para = new HashMap();
         para.put("ordernumber", txtordernumber.getText());
         para.put("name", txtcustomername.getText());

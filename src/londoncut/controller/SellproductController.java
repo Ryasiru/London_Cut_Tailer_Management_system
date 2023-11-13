@@ -245,7 +245,7 @@ public class SellproductController implements Initializable {
     }
 
     private void printProduct() throws FileNotFoundException, JRException {
-        InputStream in = new FileInputStream("src/londoncut/report/Product.jrxml");
+        InputStream in = new FileInputStream("E:\\londoncut\\src\\londoncut\\report\\Product.jrxml");
         System.out.println(txtorderid.getText()+""+txttotal.getText());
         HashMap para = new HashMap();
         para.put("ordernumber", txtorderid.getText());

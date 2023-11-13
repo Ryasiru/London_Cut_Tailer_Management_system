@@ -197,8 +197,8 @@ public class Rentcoat_2Controller implements Initializable {
             PreparedStatement pstmdetail= con.prepareStatement(detail);
             pstmdetail.setDouble(1,Double.parseDouble(txtupdaterentprice.getText()));
             pstmdetail.setString(2,updatereturn.getValue().format(DateTimeFormatter.ISO_DATE));
-            pstmdetail.setString(4,date);
-            pstmdetail.setString(5,tblrent.getSelectionModel().getSelectedItem().getNumber());
+            pstmdetail.setString(3,date);
+            pstmdetail.setString(4,tblrent.getSelectionModel().getSelectedItem().getNumber());
             
             pstmprice.setString(1, new OrdersController().setSelectOrder());
             pstmprice.setString(2, tblrent.getSelectionModel().getSelectedItem().getNumber());
@@ -252,5 +252,6 @@ public class Rentcoat_2Controller implements Initializable {
         new RentCoatDetailController().deleteRent(tblrent.getSelectionModel().getSelectedItem().getNumber(), date);
         new CoatRentController().updateCoatStatus(tblrent.getSelectionModel().getSelectedItem().getNumber());
         tblrentcoat.setItems(loadData());
+        controller.setRentTotal(0);
     }
 }

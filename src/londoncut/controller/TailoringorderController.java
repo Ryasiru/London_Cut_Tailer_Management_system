@@ -190,7 +190,7 @@ public class TailoringorderController implements Initializable {
     
     private void printTailorOrder() throws FileNotFoundException, JRException{
         int total=Integer.parseInt(txtqty.getText())*Integer.parseInt(txttailorprice.getText());
-        InputStream in = new FileInputStream("src/londoncut/report/TailorOrder.jrxml");
+        InputStream in = new FileInputStream("E:\\londoncut\\src\\londoncut\\report\\TailorOrder.jrxml");
         HashMap para = new HashMap();
         para.put("tailorid",txttailorid.getText());
         para.put("tailorname",txttailorname.getText());

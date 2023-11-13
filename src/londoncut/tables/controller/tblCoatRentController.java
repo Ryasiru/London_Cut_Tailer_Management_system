@@ -38,7 +38,7 @@ public class tblCoatRentController {
     public ObservableList<tblCoatRent> autoLoad(String data){
          ObservableList<tblCoatRent> list=FXCollections.observableArrayList();
         String sql="SELECT coatnumber , coatcolour , price FROM coat WHERE coatnumber LIKE '%"+data+"%' OR coatcolour LIKE '%"+data+"%' OR"
-                + " rentprice LIKE '%"+data+"%'";
+                + " price  LIKE '%"+data+"%'";
         Connection con=DBConnection.getInstance().getConnection();
         try {
             PreparedStatement pstm=con.prepareStatement(sql);

@@ -48,7 +48,7 @@
       </Label>
       <TextField fx:id="txtupdaterentprice" layoutX="567.0" layoutY="384.0" prefHeight="31.0" prefWidth="158.0" />
       <JFXButton fx:id="btndelete" buttonType="RAISED" focusTraversable="false" layoutX="614.0" layoutY="61.0" onAction="#deleteRentCoat" prefHeight="80.0" prefWidth="80.0" styleClass="btn_delete2" stylesheets="@btnstyle.css" />
-      <JFXButton fx:id="btnupdate" buttonType="RAISED" focusTraversable="false" layoutX="614.0" layoutY="188.0" onAction="#updateRentCoat" prefHeight="80.0" prefWidth="80.0" styleClass="btn_update2" stylesheets="@btnstyle.css" />
+<!--      <JFXButton fx:id="btnupdate" buttonType="RAISED" focusTraversable="false" layoutX="614.0" layoutY="188.0" onAction="#updateRentCoat" prefHeight="80.0" prefWidth="80.0" styleClass="btn_update2" stylesheets="@btnstyle.css" />-->
       <JFXDatePicker fx:id="returndate" layoutX="144.0" layoutY="327.0" onAction="#setDateReturn" prefHeight="31.0" prefWidth="219.0" />
       <JFXDatePicker fx:id="updatereturn" layoutX="567.0" layoutY="327.0" onAction="#setDateUpdate" prefHeight="31.0" prefWidth="170.0" />
    </children>

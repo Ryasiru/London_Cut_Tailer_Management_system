@@ -64,9 +64,9 @@ import net.sf.jasperreports.engine.JasperReport;
 import net.sf.jasperreports.engine.design.JasperDesign;
 import net.sf.jasperreports.engine.xml.JRXmlLoader;
 import net.sf.jasperreports.view.JasperViewer;
-import static org.apache.poi.hssf.usermodel.HeaderFooter.file;
-import static org.apache.velocity.texen.util.FileUtil.file;
-import static org.apache.velocity.texen.util.FileUtil.file;
+//import static org.apache.poi.hssf.usermodel.HeaderFooter.file;
+//import static org.apache.velocity.texen.util.FileUtil.file;
+//import static org.apache.velocity.texen.util.FileUtil.file;
 //import sun.plugin.javascript.navig.Anchor;
 
 /**
@@ -198,7 +198,7 @@ public class Measurement_4Controller implements Initializable {
     }
 
     private void printReport() throws JRException, FileNotFoundException {
-        InputStream in = new FileInputStream("src/londoncut/report/Payment.jrxml");
+        InputStream in = new FileInputStream("E:\\londoncut\\src\\londoncut\\report\\Payment.jrxml");
         System.out.printf(txtordernumber.getText());
         HashMap para = new HashMap();
         para.put("ordernumber", txtordernumber.getText());
