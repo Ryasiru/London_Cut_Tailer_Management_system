@@ -448,32 +448,32 @@
 				<text><![CDATA[The LondonCut Tailors]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="8" y="72" width="88" height="12" uuid="7b6ce30e-91a3-4063-a74e-855edae51fc1"/>
+				<reportElement x="8" y="72" width="500" height="12" uuid="7b6ce30e-91a3-4063-a74e-855edae51fc1"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[Address :]]></text>
+				<text><![CDATA[Address : 7/2/A, Sri Gunarathane Rd, Panadura]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="8" y="84" width="181" height="12" uuid="0c78d7a4-18ac-4156-9105-0e8c912e255f"/>
+				<reportElement x="8" y="84" width="500" height="12" uuid="0c78d7a4-18ac-4156-9105-0e8c912e255f"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[LandLine :xxxxxxxxxx   Mobile:xxxxxxxxxx]]></text>
+				<text><![CDATA[LandLine : 0382245933  Mobile: 0778624513 / 0711731398]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="232" y="60" width="67" height="12" uuid="f7461e45-7f56-49ce-814b-5b1b9661cfca"/>
+				<reportElement x="232" y="60" width="500" height="12" uuid="b5916433-d160-418f-9401-261d2ca18c57"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[Email :xxxxx@gmail.com]]></text>
+				<text><![CDATA[Like Us : The london cut - panadura]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="232" y="72" width="160" height="12" uuid="b5916433-d160-418f-9401-261d2ca18c57"/>
+				<reportElement x="232" y="72" width="500" height="12" uuid="b5916433-d160-418f-9401-261d2ca18c57"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[Like Us :xxxxxxxxxx   Follow Us:xxxxxxxxx]]></text>
+				<text><![CDATA[Follow Us: the_london_cutpanadura]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="2" y="11" width="63" height="20" uuid="8ceefec8-efc0-4c65-903d-431d8de49c4d"/>

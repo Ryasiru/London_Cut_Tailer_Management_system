@@ -553,29 +553,22 @@
 	</columnHeader>
 	<lastPageFooter>
 		<band height="114">
-			<staticText>
-				<reportElement x="231" y="65" width="67" height="12" uuid="3492b106-d907-4d58-a8c1-34523bb0ac51"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[Email :xxxxx@gmail.com]]></text>
-			</staticText>
 			<line>
 				<reportElement x="1" y="53" width="379" height="1" uuid="4f2c09e6-ed86-4751-bc9d-2828634ba3f3"/>
 			</line>
 			<staticText>
-				<reportElement x="7" y="89" width="181" height="12" uuid="5b6da46a-55a5-47bd-9a6b-1e9059dd7be3"/>
+				<reportElement x="7" y="89" width="500" height="12" uuid="5b6da46a-55a5-47bd-9a6b-1e9059dd7be3"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[LandLine :xxxxxxxxxx   Mobile:xxxxxxxxxx]]></text>
+				<text><![CDATA[LandLine : 0382245933  Mobile: 0778624513 / 0711731398]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="7" y="77" width="88" height="12" uuid="fbfd0b27-4834-417e-88d3-423d2e9d87b0"/>
+				<reportElement x="7" y="77" width="500" height="12" uuid="fbfd0b27-4834-417e-88d3-423d2e9d87b0"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[Address :]]></text>
+				<text><![CDATA[Address : 7/2/A, Sri Gunarathane Rd, Panadura]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="7" y="65" width="88" height="12" uuid="bf688fab-7d29-4db6-a795-b374082200b2"/>
@@ -585,11 +578,18 @@
 				<text><![CDATA[The LondonCut Tailors]]></text>
 			</staticText>
 			<staticText>
-				<reportElement x="231" y="77" width="160" height="12" uuid="affcd73a-06b3-4dcf-8501-1728a0252657"/>
+				<reportElement x="231" y="65" width="500" height="12" uuid="affcd73a-06b3-4dcf-8501-1728a0252657"/>
 				<textElement>
 					<font size="8"/>
 				</textElement>
-				<text><![CDATA[Like Us :xxxxxxxxxx   Follow Us:xxxxxxxxx]]></text>
+				<text><![CDATA[Like Us : The london cut - panadura]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="232" y="77" width="500" height="12" uuid="b5916433-d160-418f-9401-261d2ca18c57"/>
+				<textElement>
+					<font size="8"/>
+				</textElement>
+				<text><![CDATA[Follow Us: the_london_cutpanadura]]></text>
 			</staticText>
 			<staticText>
 				<reportElement x="7" y="23" width="76" height="20" uuid="bda916c1-a596-4cbc-a797-d49c33d70aaf"/>

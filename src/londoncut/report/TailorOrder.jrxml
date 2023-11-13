@@ -451,41 +451,41 @@
 			<line>
 				<reportElement x="2" y="356" width="379" height="1" uuid="40aed5b6-f570-4d10-910e-e89354d0e409"/>
 			</line>
-			<staticText>
-				<reportElement x="8" y="392" width="181" height="12" uuid="cfe06529-143e-41e0-a6a8-94e39edfaeb6"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[LandLine :xxxxxxxxxx   Mobile:xxxxxxxxxx]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="8" y="380" width="88" height="12" uuid="6bfcb83b-fcf7-412a-9334-ef9414f5773f"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[Address :]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="8" y="368" width="88" height="12" uuid="25d49fd6-678a-4f6d-aea8-e28d0d049aa2"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[The LondonCut Tailors]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="232" y="380" width="160" height="12" uuid="229a7333-02bb-4231-a8d6-4b18d59cb700"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[Like Us :xxxxxxxxxx   Follow Us:xxxxxxxxx]]></text>
-			</staticText>
-			<staticText>
-				<reportElement x="232" y="368" width="67" height="12" uuid="92f02be7-3075-4ce2-9de3-0c7e5dd23e2c"/>
-				<textElement>
-					<font size="8"/>
-				</textElement>
-				<text><![CDATA[Email :xxxxx@gmail.com]]></text>
-			</staticText>
+<!--			<staticText>-->
+<!--				<reportElement x="8" y="392" width="181" height="12" uuid="cfe06529-143e-41e0-a6a8-94e39edfaeb6"/>-->
+<!--				<textElement>-->
+<!--					<font size="8"/>-->
+<!--				</textElement>-->
+<!--				<text><![CDATA[LandLine :xxxxxxxxxx   Mobile:xxxxxxxxxx]]></text>-->
+<!--			</staticText>-->
+<!--			<staticText>-->
+<!--				<reportElement x="8" y="380" width="88" height="12" uuid="6bfcb83b-fcf7-412a-9334-ef9414f5773f"/>-->
+<!--				<textElement>-->
+<!--					<font size="8"/>-->
+<!--				</textElement>-->
+<!--				<text><![CDATA[Address :]]></text>-->
+<!--			</staticText>-->
+<!--			<staticText>-->
+<!--				<reportElement x="8" y="368" width="88" height="12" uuid="25d49fd6-678a-4f6d-aea8-e28d0d049aa2"/>-->
+<!--				<textElement>-->
+<!--					<font size="8"/>-->
+<!--				</textElement>-->
+<!--				<text><![CDATA[The LondonCut Tailors]]></text>-->
+<!--			</staticText>-->
+<!--			<staticText>-->
+<!--				<reportElement x="232" y="380" width="160" height="12" uuid="229a7333-02bb-4231-a8d6-4b18d59cb700"/>-->
+<!--				<textElement>-->
+<!--					<font size="8"/>-->
+<!--				</textElement>-->
+<!--				<text><![CDATA[Like Us :xxxxxxxxxx   Follow Us:xxxxxxxxx]]></text>-->
+<!--			</staticText>-->
+<!--			<staticText>-->
+<!--				<reportElement x="232" y="368" width="67" height="12" uuid="92f02be7-3075-4ce2-9de3-0c7e5dd23e2c"/>-->
+<!--				<textElement>-->
+<!--					<font size="8"/>-->
+<!--				</textElement>-->
+<!--				<text><![CDATA[Email :xxxxx@gmail.com]]></text>-->
+<!--			</staticText>-->
 			<textField>
 				<reportElement x="89" y="16" width="100" height="20" uuid="ae2db6d9-181d-432c-9668-a9d4a353d66d"/>
 				<textElement verticalAlignment="Middle">
